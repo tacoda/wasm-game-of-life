@@ -50,3 +50,41 @@ wasm-pack test --headless --firefox
 ```
 wasm-pack publish
 ```
+
+## Notes
+
+### Creating
+
+```sh
+cargo generate --git https://github.com/rustwasm/wasm-pack-template
+```
+
+### Building
+
+```sh
+wasm-pack build
+```
+
+### Web Page
+
+```sh
+npm init wasm-app www
+
+cd www/
+npm install
+
+cd ../pkg/
+npm link
+
+cd ../www/
+npm link wasm-game-of-life
+```
+
+Update `index.js` with filename changes.
+
+### Serve Locally
+
+```sh
+cd www/
+npm run start
+```
