@@ -88,3 +88,10 @@ Update `index.js` with filename changes.
 cd www/
 npm run start
 ```
+
+### Test
+
+```sh
+wasm-pack test --chrome --headless
+wasm-pack test --firefox --headless
+```
